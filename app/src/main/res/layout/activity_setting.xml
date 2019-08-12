@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="handlers"
+            type="com.app.eduapp.SettingActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_splash">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/topbar_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/parent_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/recycle_view_padding">
+
+
+                <ImageView
+                    android:id="@+id/top_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_logo_org"
+                    app:layout_heightPercent="20%"
+                    app:layout_marginTopPercent="1%"
+                    app:layout_widthPercent="25%" />
+
+                <TextView
+                    android:id="@+id/school_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_icon"
+                    android:layout_centerHorizontal="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    app:layout_marginTopPercent="1%" />
+
+                <RelativeLayout
+                    android:id="@+id/v_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/school_name"
+                    android:layout_marginTop="7dp"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/schooladddres_size"
+                        app:layout_marginLeftPercent="3%"
+                        app:layout_marginRightPercent="3%"
+                        app:layout_marginTopPercent="1%" />
+
+                    <TextView
+                        android:id="@+id/number_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/address"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/call_black"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/schooladddres_size"
+                        app:layout_marginLeftPercent="3%"
+                        app:layout_marginRightPercent="3%"
+                        app:layout_marginTopPercent="3%" />
+
+                    <TextView
+                        android:id="@+id/number_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/number_one"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/call_black"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/schooladddres_size"
+                        app:layout_marginLeftPercent="3%"
+                        app:layout_marginRightPercent="3%"
+                        app:layout_marginTopPercent="1%" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/sync_now_txt"
+                    android:layout_below="@+id/school_name"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_pressed"
+                    android:text="@string/sync_now"
+                    android:visibility="gone"
+                    app:layout_heightPercent="7%"
+                    app:layout_marginTopPercent="2%"
+                    app:layout_widthPercent="32%" />
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/setting_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sync_now_txt"
+                    android:background="@color/colorPrimary"
+                    android:padding="@dimen/text_padding_size"
+                    android:visibility="gone"
+                    app:layout_marginTopPercent="2%">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sync_every_time_txt"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_mediumsize"
+                        app:layout_marginLeftPercent="5%" />
+
+                    <LinearLayout
+                        android:id="@+id/yes_no_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        app:layout_marginRightPercent="4%">
+
+                        <ImageView
+                            android:id="@+id/yes_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="@{handlers::ClickEvent}"
+                            android:src="@drawable/yes_active" />
+
+                        <ImageView
+                            android:id="@+id/no_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="@{handlers::ClickEvent}"
+                            android:src="@drawable/no_deactive" />
+                    </LinearLayout>
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/attendence_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v_contact"
+                    android:background="@color/colorPrimary"
+                    android:padding="@dimen/text_padding_size"
+                    android:visibility="gone"
+                    app:layout_marginTopPercent="6%">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/attendence_notification"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_mediumsize"
+                        app:layout_marginLeftPercent="5%" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        app:layout_marginRightPercent="4%">
+
+                        <TextView
+                            android:id="@+id/daily_iv"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_style_white"
+                            android:gravity="center"
+                            android:onClick="@{handlers::ClickEvent}"
+                            android:padding="@dimen/text_padding_size"
+                            android:text="Weekly" />
+
+                        <TextView
+                            android:id="@+id/weekly_iv"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_style_blue"
+                            android:gravity="center"
+                            android:onClick="@{handlers::ClickEvent}"
+                            android:padding="@dimen/text_padding_size"
+                            android:src="@drawable/no_deactive"
+                            android:text="Daily" />
+                    </LinearLayout>
+                </android.support.percent.PercentRelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/attendence_view"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/bg_one"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    app:layout_marginTopPercent="2%">
+
+                    <TextView
+                        android:id="@+id/switch_student_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="3dp"
+                        android:text="Switch Student"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/switch_student_txt"
+                        android:padding="@dimen/recycle_view_padding"
+                        android:scrollbars="vertical"
+                        android:visibility="gone"
+                        app:layout_marginTopPercent="1%" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/switch_student_txt"
+                        android:orientation="vertical"
+                        android:padding="@dimen/recycle_view_padding"
+                        app:layout_marginTopPercent="1%">
+
+                        <RadioGroup
+                            android:id="@+id/radiogroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.percent.PercentRelativeLayout>
+        </ScrollView>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/ic_sub_logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Support: www.croyezdem.com"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="info@croyezdem.com"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="croyezdem@gmail.com"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Call: +91-9614195569"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</layout>

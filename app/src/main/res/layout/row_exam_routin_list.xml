@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="routine"
+            type="com.app.eduapp.pojo.ExamSubjects.ExamSubjectsList" />
+    </data>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/parent_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/single_row_bg"
+            android:padding="@dimen/text_padding_size">
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{routine.SubjectsName}"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                app:layout_marginLeftPercent="2%" />
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subject"
+                android:background="@color/single_row_bg"
+                android:padding="@dimen/text_padding_size">
+
+                <TextView
+                    android:id="@+id/schedule_on_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/schdule_on"
+                    android:textColor="@color/white"
+                    app:layout_marginLeftPercent="2%" />
+
+                <TextView
+                    android:id="@+id/exam_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/schedule_on_text"
+                    android:text="@{routine.ExamDate}"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    app:layout_marginLeftPercent="2%"
+                    android:layout_centerVertical="true"
+                    app:layout_marginRightPercent="2%" />
+            </android.support.percent.PercentRelativeLayout>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/parent_view"
+            android:background="@color/white" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:background="@color/single_row_bg"
+            android:padding="@dimen/text_padding_size">
+
+            <TextView
+                android:id="@+id/fullmark_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="@string/fullmarks_txt"
+                android:textColor="@color/white"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="1%" />
+
+            <TextView
+                android:id="@+id/full_marks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/fullmark_txt"
+                android:text="@{routine.TotalMarks}"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/passmark_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/pass_marks"
+                android:text="@string/passsmark_txt"
+                android:textColor="@color/white"
+                app:layout_marginLeftPercent="2%" />
+
+            <TextView
+                android:id="@+id/pass_marks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@{routine.PassMarks}"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                app:layout_marginLeftPercent="2%"
+                app:layout_marginRightPercent="14%" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/bottom_view"
+            android:background="@color/white" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/bottom_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider1"
+            android:background="@color/single_row_bg"
+            android:padding="@dimen/text_padding_size">
+
+            <TextView
+                android:id="@+id/tv_starttime_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="Start Time:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/white"
+                app:layout_marginLeftPercent="4%"
+                app:layout_marginRightPercent="1%" />
+
+            <TextView
+                android:id="@+id/tv_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_starttime_txt"
+                android:text="@{routine.startTime}"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/endtime_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/tv_endtime"
+                android:text="End Time:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/white"
+                app:layout_marginLeftPercent="2%" />
+
+            <TextView
+                android:id="@+id/tv_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@{routine.endTime}"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/black"
+                app:layout_marginLeftPercent="2%"
+                app:layout_marginRightPercent="14%" />
+        </android.support.percent.PercentRelativeLayout>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+</layout>

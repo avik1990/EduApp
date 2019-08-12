@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/topbar_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/school_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginRightPercent="4%"
+            app:layout_marginTopPercent="4%" />
+
+
+        <ImageView
+            android:id="@+id/top_icon"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/school_txt"
+            android:layout_centerHorizontal="true"
+            app:layout_heightPercent="25%"
+            app:layout_marginTopPercent="1%"
+            app:layout_widthPercent="30%" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_icon"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/schooladddres_size"
+            app:layout_marginLeftPercent="3%"
+            app:layout_marginRightPercent="3%"
+            app:layout_marginTopPercent="1%" />
+
+        <TextView
+            android:id="@+id/number_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/call_black"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/schooladddres_size"
+            app:layout_marginLeftPercent="3%"
+            app:layout_marginRightPercent="3%"
+            app:layout_marginTopPercent="3%" />
+
+        <TextView
+            android:id="@+id/number_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/number_one"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/call_black"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/schooladddres_size"
+            app:layout_marginLeftPercent="3%"
+            app:layout_marginRightPercent="3%"
+            app:layout_marginTopPercent="1%" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/number_two"
+            android:background="#5e000000"
+            android:visibility="gone"
+            android:paddingBottom="5dp"
+            app:layout_marginLeftPercent="2%"
+            app:layout_marginRightPercent="2%"
+            app:layout_marginTopPercent="2%">
+
+            <ImageView
+                android:id="@+id/arrow_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/img_padding"
+                android:src="@drawable/icon_arrow" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/text_padding_size"
+                android:text="Croyezdem"
+                android:textColor="@color/green_color"
+                android:textSize="@dimen/text_size"
+                app:layout_marginLeftPercent="3%"
+                app:layout_marginRightPercent="3%"
+                app:layout_marginTopPercent="1%" />
+
+            <TextView
+                android:id="@+id/number_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/arrow_img"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/call_white"
+                android:gravity="center_horizontal"
+                android:text="8420473395"
+                android:textColor="@color/white"
+                android:textSize="@dimen/schooladddres_size"
+                app:layout_marginLeftPercent="3%"
+                app:layout_marginRightPercent="3%"
+                app:layout_marginTopPercent="2%" />
+
+            <TextView
+                android:id="@+id/number_fore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number_three"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/call_white"
+                android:gravity="center_horizontal"
+                android:text="7872696004"
+                android:textColor="@color/white"
+                android:textSize="@dimen/schooladddres_size"
+                app:layout_marginBottomPercent="2%"
+                app:layout_marginLeftPercent="3%"
+                app:layout_marginRightPercent="3%"
+                app:layout_marginTopPercent="1%" />
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+</layout>

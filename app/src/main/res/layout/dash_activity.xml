@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context="com.app.eduapp.Dashboard">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/topbar_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/prl_box1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar">
+
+            <RelativeLayout
+                android:id="@+id/v_profile"
+                android:background="#9e28b2"
+                app:layout_heightPercent="17%"
+                app:layout_widthPercent="50%">
+
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_profile" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/v_attendance"
+                android:layout_toRightOf="@+id/v_profile"
+                android:background="#fa931c"
+                app:layout_heightPercent="17%"
+                app:layout_widthPercent="50%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_attendance" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/v_note"
+                android:layout_below="@+id/v_profile"
+                android:background="#eb1c62"
+                app:layout_heightPercent="17%"
+                app:layout_widthPercent="50%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_notice" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/v_leaveapp"
+                android:layout_below="@+id/v_attendance"
+                android:layout_toRightOf="@+id/v_note"
+                android:background="#1d2935"
+                app:layout_heightPercent="17%"
+                app:layout_widthPercent="50%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_leaveapplication" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/v_event_calender"
+                android:layout_below="@+id/v_note"
+                android:background="#683ab7"
+                app:layout_heightPercent="17%"
+                app:layout_widthPercent="50%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_eventcalender" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/v_studentdiary"
+                android:layout_below="@+id/v_leaveapp"
+                android:layout_toRightOf="@+id/v_event_calender"
+                android:background="#f34334"
+                app:layout_heightPercent="17%"
+                app:layout_widthPercent="50%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_studentdiary" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/v_exam"
+                android:layout_below="@+id/v_event_calender"
+                android:background="#3300ff"
+                app:layout_heightPercent="17%"
+                app:layout_widthPercent="50%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_exam" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/v_fees"
+                android:layout_below="@+id/v_studentdiary"
+                android:layout_toRightOf="@+id/v_exam"
+                android:background="#1abbb6"
+                app:layout_heightPercent="17%"
+                app:layout_widthPercent="50%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_fees" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/v_routine"
+                android:layout_below="@+id/v_exam"
+                android:background="#045c05"
+                app:layout_heightPercent="17%"
+                app:layout_widthPercent="50%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_classs_schedule" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/v_result"
+                android:layout_below="@+id/v_fees"
+                android:layout_toRightOf="@+id/v_routine"
+                android:background="#003180"
+                app:layout_heightPercent="17%"
+                app:layout_widthPercent="50%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_result" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/v_signout"
+                android:layout_below="@+id/v_routine"
+                android:background="#800001"
+                app:layout_heightPercent="17%"
+                app:layout_widthPercent="50%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_signout" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/v_settings"
+                android:layout_below="@+id/v_result"
+                android:layout_toRightOf="@+id/v_signout"
+                android:background="#045c05"
+                app:layout_heightPercent="17%"
+                app:layout_widthPercent="50%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_settings" />
+            </RelativeLayout>
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+
+</layout>

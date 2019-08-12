@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+      <variable
+        name="reportCard"
+        type="com.app.eduapp.pojo.ReportCardBean" />
+    </data>
+
+
+  <android.support.percent.PercentRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <android.support.percent.PercentRelativeLayout
+    android:id="@+id/parent_view"
+    android:background="@color/single_row_bg_transparent"
+    android:padding="@dimen/text_padding_size"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      app:layout_marginLeftPercent="2%"
+      android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+      android:id="@+id/subject"
+      android:text="@{reportCard.subject}"
+      android:textColor="@color/black"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+    <TextView
+      android:layout_centerInParent="true"
+      android:layout_toLeftOf="@+id/exam_date"
+      app:layout_marginLeftPercent="2%"
+      android:id="@+id/schedule_on_text"
+      android:textAppearance="@style/TextAppearance.AppCompat.Small"
+      android:text="@string/held_on"
+      android:textColor="@color/black"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+    <TextView
+      android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+      android:id="@+id/exam_date"
+      android:text="@{reportCard.date}"
+      android:layout_alignParentRight="true"
+      android:textColor="@color/black"
+      android:layout_width="wrap_content"
+      app:layout_marginRightPercent="2%"
+      app:layout_marginLeftPercent="2%"
+      android:layout_height="wrap_content"/>
+  </android.support.percent.PercentRelativeLayout>
+
+    <View
+      android:id="@+id/divider"
+      android:layout_below="@+id/parent_view"
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@color/white" />
+
+  <LinearLayout
+    android:layout_below="@+id/divider"
+    android:weightSum="4"
+    android:id="@+id/header_ll"
+    android:gravity="center"
+    android:background="@color/single_row_bg_transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:text="@string/full_marks"
+      android:gravity="center"
+      android:textColor="@color/white"
+      android:textStyle="bold"
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"/>
+
+    <TextView
+      android:text="@string/pass_marks"
+      android:textColor="@color/white"
+      android:textStyle="bold"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"/>
+
+    <TextView
+      android:text="@string/acq_marks"
+      android:textColor="@color/white"
+      android:textStyle="bold"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"/>
+
+    <TextView
+      android:text="@string/grade"
+      android:textColor="@color/white"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"/>
+  </LinearLayout>
+    <LinearLayout
+      android:layout_below="@+id/header_ll"
+      android:weightSum="4"
+      android:gravity="center"
+      android:background="@color/number_bg_color"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <TextView
+        android:text="@{reportCard.fullMark}"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+      <TextView
+        android:text="@{reportCard.passmark}"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+      <TextView
+        android:text="@{reportCard.acq_marks}"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+      <TextView
+        android:text="@{reportCard.grade}"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+  </android.support.percent.PercentRelativeLayout>
+
+</layout>

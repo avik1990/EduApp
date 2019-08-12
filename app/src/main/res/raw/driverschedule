@@ -1,0 +1,375 @@
+{
+  "status": "1",
+  "msg": "success",
+  "data": {
+    "schedules": [
+      {
+         "is_active": "0",
+         "route_details": {
+          "ds_id": "1",
+          "kidpool_route_id": "03/06/18"
+        },
+        "alloted_kids": [
+          {
+            "kid_name": "KID 1B",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": "https://i.stack.imgur.com/9udcy.jpg?s=328&g=1",
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "2"
+          },
+          {
+            "kid_name": "KID 1A",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": "https://i.stack.imgur.com/9udcy.jpg?s=328&g=1",
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "1"
+          },
+          {
+            "kid_name": "KID 2B",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": "https://i.stack.imgur.com/9udcy.jpg?s=328&g=1",
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "4"
+          },
+          {
+            "kid_name": "XYZ",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": "https://i.stack.imgur.com/9udcy.jpg?s=328&g=1",
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "59"
+          },
+          {
+            "kid_name": "KID 3",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": "https://i.stack.imgur.com/9udcy.jpg?s=328&g=1",
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "60"
+          },
+          {
+            "kid_name": "KID 3A",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": "https://i.stack.imgur.com/9udcy.jpg?s=328&g=1",
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "61"
+          },
+          {
+            "kid_name": "KID 2A",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": null,
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "3"
+          },
+          {
+            "kid_name": "KID 5",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": null,
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "64"
+          }
+        ]
+      },
+      {
+        "is_active": "0",
+        "route_details": {
+          "ds_id": "3",
+          "kidpool_route_id": "03/05/18"
+        },
+        "alloted_kids": [
+          {
+            "kid_name": "KID 1B",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": "https://i.stack.imgur.com/9udcy.jpg?s=328&g=1",
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "2"
+          },
+          {
+            "kid_name": "KID 1A",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": "https://i.stack.imgur.com/9udcy.jpg?s=328&g=1",
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "1"
+          },
+          {
+            "kid_name": "KID 2B",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": "https://i.stack.imgur.com/9udcy.jpg?s=328&g=1",
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "4"
+          },
+          {
+            "kid_name": "XYZ",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": "https://i.stack.imgur.com/9udcy.jpg?s=328&g=1",
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "59"
+          },
+          {
+            "kid_name": "KID 3",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": null,
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "60"
+          },
+          {
+            "kid_name": "KID 3A",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": null,
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "61"
+          },
+          {
+            "kid_name": "KID 2A",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": null,
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "3"
+          },
+          {
+            "kid_name": "KID 5",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": null,
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "64"
+          },
+          {
+            "kid_name": "KID B",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": null,
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "68"
+          },
+          {
+            "kid_name": "KID 6",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": null,
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "66"
+          },
+          {
+            "kid_name": "KID 5A",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": null,
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "65"
+          }
+        ]
+      },
+      {
+        "is_active": "0",
+        "route_details": {
+          "ds_id": "23",
+          "kidpool_route_id": "02/01/18"
+        },
+        "alloted_kids": [
+          {
+            "kid_name": "KID B",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": null,
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "68"
+          },
+          {
+            "kid_name": "KID 6",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": null,
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "66"
+          },
+          {
+            "kid_name": "KID 5A",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": null,
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "65"
+          },
+          {
+            "kid_name": "KID A",
+            "kid_gender": "n/a",
+            "kid_dob": "0000-00-00",
+            "kid_image": null,
+            "kid_address": "",
+            "kid_class": "n/a",
+            "kid_section": "n/a",
+            "kid_blood_group": "n/a",
+            "kid_pickup_time_up": "12:00 AM",
+            "kid_drop_time_up": "12:00 AM",
+            "kid_status": "1",
+            "kid_id": "67"
+          }
+        ]
+      }
+    ],
+    "driver_details": {
+      "driver_details": {
+        "driver_id": "1",
+        "kidpool_driver_no": "ED150404270218",
+        "driver_name": "DRIVER SIPL 1",
+        "driver_dob": "0000-00-00",
+        "driver_address": "",
+        "driver_mobile_1": "9000000001",
+        "driver_mobile_2": "",
+        "driver_image": "",
+        "driving_license_no": "",
+        "driving_license_image": "",
+        "driving_license_valid_upto": "0000-00-00",
+        "driver_blood_group": "A+",
+        "device_id": "861645036247906"
+      }
+    },
+    "kid_img_url": "http://api.dev.kidpool.in/1.1/assets/img/kids/"
+  }
+}

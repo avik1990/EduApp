@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/v_main"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/rounded_corner_lightblue"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tv_childname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/v_icon"
+        android:gravity="center_vertical"
+        android:text="Notice topic 1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/v_icon"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/tv_showindiarylist"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:text="All"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#feaf20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

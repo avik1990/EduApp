@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "603518405641",
+    "firebase_url": "https://lmet-educare.firebaseio.com",
+    "project_id": "lmet-educare",
+    "storage_bucket": "lmet-educare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603518405641:android:5921f2679a3e4f67",
+        "android_client_info": {
+          "package_name": "com.app.eduapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9t9IYWxphV4xB5SZhMy9MEDfCp-JAD2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603518405641-n2a2np7la04kmqisa7gscr4e9132ier0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

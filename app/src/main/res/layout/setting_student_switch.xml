@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+      <variable
+        name="studentbean"
+        type="com.app.eduapp.pojo.StudentNameBean" />
+      <variable
+        name="position"
+        type="Integer"/>
+      <variable name="handlers"
+        type="com.app.eduapp.adapter.SettingAdapter.SimpleObjectHolder" />
+
+    </data>
+
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:padding="@dimen/single_row_padding"
+    android:background="@drawable/curve_bg"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:paddingLeft="@dimen/text_padding_size"
+      android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+      android:id="@+id/exam_name"
+      android:gravity="center"
+      android:text="@{studentbean.studentName}"
+      android:textColor="@color/white"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+      android:layout_alignParentRight="true"
+      android:id="@+id/yes_no_ll"
+      android:padding="3dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <ImageView
+        android:id="@+id/yes_iv"
+        android:src="@{studentbean.isSwitched ? @drawable/yes_active:@drawable/yes_deactive}"
+        android:layout_width="wrap_content"
+        android:onClick="@{handlers::onSwitchClicked}"
+        android:layout_height="wrap_content"/>
+
+      <ImageView
+        android:layout_toRightOf="@+id/yes_iv"
+        android:id="@+id/no_iv"
+        app:specialTag="@{studentbean}"
+        android:onClick="@{handlers::onSwitchClicked}"
+        android:src="@{!studentbean.isSwitched ? @drawable/no_active:@drawable/no_deactive}"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+  </RelativeLayout>
+
+</layout>

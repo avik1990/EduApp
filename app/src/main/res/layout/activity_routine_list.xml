@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!--<variable
+          name="simpledataobject"
+          type="in.supertroninfotech.httpwww.databindingtuts.model.SimpleObject" />-->
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_splash"
+        tools:context="demo.app.com.uidesign.ExamRoutineListActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/topbar_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/parent_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <TextView
+                android:id="@+id/className"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_one"
+                android:gravity="center"
+                android:padding="@dimen/text_padding_size"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_marginTopPercent="2%" />
+
+
+            <TextView
+                android:id="@+id/exam_type"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/className"
+                android:background="@color/bg_two"
+                android:gravity="center"
+                android:padding="@dimen/text_padding_size"
+                android:text="Exam"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_marginTopPercent="2%" />
+
+            <TextView
+                android:id="@+id/stuSection"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/exam_type"
+                android:background="#36a4ad"
+                android:gravity="center"
+                android:padding="@dimen/text_padding_size"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_marginTopPercent="1%" />
+
+            <TextView
+                android:id="@+id/stuName"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/stuSection"
+                android:background="@color/bg_one"
+                android:gravity="center"
+                android:padding="@dimen/text_padding_size"
+                android:visibility="gone"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_marginTopPercent="1%" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stuName"
+                android:padding="@dimen/recycle_view_padding"
+                android:scrollbars="vertical"
+                app:layout_marginTopPercent="2%" />
+        </android.support.percent.PercentRelativeLayout>
+    </RelativeLayout>
+</layout>

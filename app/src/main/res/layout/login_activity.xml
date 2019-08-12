@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_splash"
+        tools:context="com.app.eduapp.SplashActivity">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_logo_org"
+            app:layout_heightPercent="25%"
+            app:layout_marginTopPercent="5%"
+            app:layout_widthPercent="50%" />
+
+        <TextView
+            android:id="@+id/tv_schoolname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_logo"
+            android:gravity="center"
+            android:text="LMET INTERNATIONAL SCHOOL"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#1a4f91"
+            android:textStyle="bold"
+            app:layout_marginTopPercent="4%" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/v_tv_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_schoolname"
+            android:gravity="center_horizontal"
+            app:layout_marginTopPercent="4%">
+
+            <android.support.percent.PercentFrameLayout
+                android:background="@drawable/ic_phone_background_login"
+                app:layout_heightPercent="15%"
+                app:layout_marginTopPercent="5%"
+                app:layout_widthPercent="90%">
+
+                <EditText
+                    android:id="@+id/et_phoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Phone Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    app:layout_marginLeftPercent="22%" />
+            </android.support.percent.PercentFrameLayout>
+        </android.support.percent.PercentRelativeLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_below="@+id/v_tv_view"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_loginbutton"
+            app:layout_heightPercent="8%"
+            app:layout_marginTopPercent="7%"
+            app:layout_widthPercent="90%" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_sub_logo" />
+    </android.support.percent.PercentRelativeLayout>
+</layout>
+
+
+

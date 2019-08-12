@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <!--<variable
+      name="simpledataobject"
+      type="in.supertroninfotech.httpwww.databindingtuts.model.SimpleObject" />-->
+  </data>
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash"
+    tools:context="demo.app.com.uidesign.ExamRoutineListActivity">
+
+    <android.support.percent.PercentRelativeLayout
+      android:id="@+id/parent_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+      <TextView
+        android:padding="@dimen/text_padding_size"
+        android:background="@color/bg_two"
+        android:id="@+id/exam_name"
+        app:layout_marginTopPercent="2%"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/text_size"
+        android:text="Exam Held"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+      <android.support.v7.widget.RecyclerView
+        android:padding="@dimen/recycle_view_padding"
+        android:layout_below="@+id/exam_name"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+    </android.support.percent.PercentRelativeLayout>
+
+  </RelativeLayout>
+</layout>

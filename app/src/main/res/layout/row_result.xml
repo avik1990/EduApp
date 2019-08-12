@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="resultlist"
+            type="com.app.eduapp.pojo.ResultSubjectsList.ResultSubjectsListData" />
+    </data>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/parent_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#36a4ad"
+            android:padding="@dimen/text_padding_size">
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{resultlist.SubjectsName}"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                app:layout_marginLeftPercent="2%" />
+
+            <TextView
+                android:id="@+id/schedule_on_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/exam_date"
+                android:text="@string/heldon"
+                android:textColor="#c7c7c7"
+                app:layout_marginLeftPercent="2%" />
+
+            <TextView
+                android:id="@+id/exam_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@{resultlist.ExamDate}"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                app:layout_marginLeftPercent="2%"
+                app:layout_marginRightPercent="2%" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/parent_view"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:background="#57b3ba"
+            android:padding="@dimen/text_padding_size"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fullmarks_txt"
+                android:textColor="@color/white"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="1%" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Pass Marks"
+                android:textColor="@color/white"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="1%" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Acq. Marks"
+                android:textColor="@color/white"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="1%" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="(%)grade"
+                android:textColor="@color/white"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="1%" />
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/bottom_view"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider1"
+            android:background="#79b7bc"
+            android:padding="@dimen/text_padding_size"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{resultlist.TotalMarks}"
+                android:textColor="@color/black"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="1%" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{resultlist.PassMarks}"
+                android:textColor="@color/black"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="1%" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{resultlist.MarksObtained}"
+                android:textColor="@color/black"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="1%" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{resultlist.PercentageMarks}"
+                android:textColor="@color/black"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="1%" />
+        </LinearLayout>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+</layout>

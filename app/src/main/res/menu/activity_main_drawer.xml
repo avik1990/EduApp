@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_dash"
+        android:icon="@drawable/ic_profile_menu"
+        android:title="Dashboard"
+        android:visible="true" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile_menu"
+        android:title="Profile"
+        android:visible="true" />
+    <item
+        android:id="@+id/nav_attendance"
+        android:icon="@drawable/ic_attendance_menu"
+        android:title="Attendance" />
+    <item
+        android:id="@+id/nav_schoolnotice"
+        android:icon="@drawable/ic_schoolname_menu"
+        android:title="School Notice" />
+    <item
+        android:id="@+id/nav_leaveapplication"
+        android:icon="@drawable/ic_leaveapplication_menu"
+        android:title="Leave Application" />
+
+    <item
+        android:id="@+id/nav_eventcalender"
+        android:enabled="true"
+        android:icon="@drawable/ic_leaveapplication_menu"
+        android:title="Event Calender" />
+
+    <item
+        android:id="@+id/nav_studentdiary"
+        android:enabled="true"
+        android:icon="@drawable/ic_studentdiary_menu"
+        android:title="Student Diary" />
+
+    <item
+        android:id="@+id/nav_exam"
+        android:enabled="true"
+        android:icon="@drawable/ic_exams_menu"
+        android:title="Exam" />
+
+    <item
+        android:id="@+id/nav_fees"
+        android:enabled="true"
+        android:icon="@drawable/ic_fees_menu"
+        android:title="Fees" />
+    <item
+        android:id="@+id/nav_settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings_menu"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/nav_routine"
+        android:enabled="true"
+        android:icon="@drawable/ic_results_menu"
+        android:title="Class Schedule" />
+
+    <item
+        android:id="@+id/nav_result"
+        android:enabled="true"
+        android:icon="@drawable/ic_results_menu"
+        android:title="Results" />
+    <item
+        android:id="@+id/nav_signout"
+        android:enabled="true"
+        android:icon="@drawable/ic_signout_meun"
+        android:title="Sign Out" />
+    <item
+        android:id="@+id/nav_update"
+        android:enabled="true"
+        android:icon="@drawable/ic_contactus_menu"
+        android:title="Update"
+        android:visible="true" />
+    <item
+        android:id="@+id/nav_version"
+        android:enabled="false"
+        android:title="v2.7 | 05.08.2019" />
+</menu>
