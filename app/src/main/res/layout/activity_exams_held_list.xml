@@ -23,7 +23,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true" />
 
-        <android.support.percent.PercentRelativeLayout
+        <androidx.percentlayout.widget.PercentRelativeLayout
             android:id="@+id/parent_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -45,7 +45,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_marginTopPercent="2%" />
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
                 android:padding="@dimen/recycle_view_padding"
                 android:scrollbars="vertical"
                 app:layout_marginTopPercent="1%" />
-        </android.support.percent.PercentRelativeLayout>
+        </androidx.percentlayout.widget.PercentRelativeLayout>
 
     </RelativeLayout>
 </layout>

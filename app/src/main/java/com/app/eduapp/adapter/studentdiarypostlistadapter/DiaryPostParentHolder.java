@@ -2,14 +2,13 @@ package com.app.eduapp.adapter.studentdiarypostlistadapter;
 
 import android.annotation.SuppressLint;
 import android.os.Build;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.app.eduapp.R;
-import com.app.eduapp.pojo.Notice;
 import com.app.eduapp.pojo.StudentPostList;
 import com.bignerdranch.expandablerecyclerview.ParentViewHolder;
 

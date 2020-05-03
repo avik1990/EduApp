@@ -1,6 +1,6 @@
 package com.app.eduapp.helper;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntity;

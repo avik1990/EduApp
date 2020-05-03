@@ -37,7 +37,7 @@ public class LocalStorageProvider extends DocumentsProvider{
     };
     /**
      * Default document projection: everything but Document.COLUMN_ICON and
-     * Document.COLUMN_SUMMARY
+     * Document.COLUMN_SUMMARYinternal_storage
      */
     private final static String[] DEFAULT_DOCUMENT_PROJECTION = new String[] {
             Document.COLUMN_DOCUMENT_ID,

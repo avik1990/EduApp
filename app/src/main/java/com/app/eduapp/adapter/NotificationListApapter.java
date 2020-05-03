@@ -2,31 +2,23 @@ package com.app.eduapp.adapter;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.support.percent.PercentRelativeLayout;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.percentlayout.widget.PercentRelativeLayout;
+import androidx.appcompat.app.AlertDialog;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.app.eduapp.NotificationListActivity;
 import com.app.eduapp.R;
-import com.app.eduapp.StudentProfile;
 import com.app.eduapp.helper.ConnectionDetector;
-import com.app.eduapp.helper.EdUtils;
-import com.app.eduapp.helper.MapUtils;
-import com.app.eduapp.pojo.GetStudentsList;
 import com.app.eduapp.pojo.ModelInbox;
 import com.app.eduapp.sqlitedb.LCDatabaseHandler;
-import com.squareup.picasso.Picasso;
 
 import java.util.List;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 
 public class NotificationListApapter extends RecyclerView.Adapter<NotificationListApapter.VHItem> {
     private Context mContext;

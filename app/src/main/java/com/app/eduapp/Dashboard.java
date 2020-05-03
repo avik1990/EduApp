@@ -1,7 +1,6 @@
 package com.app.eduapp;
 
 import android.Manifest;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -9,16 +8,16 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.databinding.DataBindingUtil;
+import androidx.databinding.DataBindingUtil;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.design.widget.NavigationView;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.view.GravityCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import com.google.android.material.navigation.NavigationView;
+import androidx.core.app.ActivityCompat;
+import androidx.core.view.GravityCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
@@ -33,7 +32,6 @@ import com.app.eduapp.retrofit.api.ApiServices;
 import com.app.eduapp.sqlitedb.LCDatabaseHandler;
 import com.app.eduapp.tattendance.AClassListActivity;
 import com.app.eduapp.teacher.TClassListActivity;
-import com.gun0912.tedpicker.ImagePickerActivity;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -269,7 +267,6 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             }
         });
     }
-
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
@@ -287,6 +284,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             }
         }, 2000);
     }
+
 
 
     private boolean checkpermission() {

@@ -5,7 +5,7 @@
 
     <data></data>
 
-    <android.support.percent.PercentRelativeLayout
+    <androidx.percentlayout.widget.PercentRelativeLayout
         android:id="@+id/parent_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -112,5 +112,5 @@
                 android:textColor="@color/white" />
         </RelativeLayout>
 
-    </android.support.percent.PercentRelativeLayout>
+    </androidx.percentlayout.widget.PercentRelativeLayout>
 </layout>

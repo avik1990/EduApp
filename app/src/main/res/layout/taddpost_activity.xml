@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <android.support.percent.PercentRelativeLayout
+    <androidx.percentlayout.widget.PercentRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/ic_splash"
@@ -70,7 +70,7 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/v_month">
 
-            <android.support.percent.PercentRelativeLayout
+            <androidx.percentlayout.widget.PercentRelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="16dp">
@@ -81,7 +81,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical" />
 
-                <android.support.percent.PercentFrameLayout
+                <androidx.percentlayout.widget.PercentFrameLayout
                     android:id="@+id/v_sp_1"
                     android:layout_below="@+id/ll_container"
                     android:layout_centerHorizontal="true"
@@ -105,7 +105,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="right|center_vertical"
                         android:src="@drawable/ic_down_arrow" />
-                </android.support.percent.PercentFrameLayout>
+                </androidx.percentlayout.widget.PercentFrameLayout>
 
 
                 <EditText
@@ -226,7 +226,7 @@
                         android:text="Submit"
                         android:textColor="@color/white" />
                 </LinearLayout>
-            </android.support.percent.PercentRelativeLayout>
+            </androidx.percentlayout.widget.PercentRelativeLayout>
         </ScrollView>
-    </android.support.percent.PercentRelativeLayout>
+    </androidx.percentlayout.widget.PercentRelativeLayout>
 </layout>

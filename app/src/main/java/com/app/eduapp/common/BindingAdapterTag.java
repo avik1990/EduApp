@@ -1,6 +1,6 @@
 package com.app.eduapp.common;
 
-import android.databinding.BindingAdapter;
+import androidx.databinding.BindingAdapter;
 import android.view.View;
 
 /**

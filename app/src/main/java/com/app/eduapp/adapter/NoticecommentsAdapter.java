@@ -1,18 +1,16 @@
 package com.app.eduapp.adapter;
 
 import android.content.Context;
-import android.databinding.DataBindingUtil;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.databinding.DataBindingUtil;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.app.eduapp.R;
 import com.app.eduapp.common.ClickEventLisener;
 import com.app.eduapp.databinding.NcommentListBinding;
-import com.app.eduapp.databinding.ScommentListBinding;
 import com.app.eduapp.pojo.NCommentBean;
-import com.app.eduapp.pojo.SCommentBean;
 
 import java.util.List;
 

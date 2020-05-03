@@ -1,6 +1,6 @@
 package com.app.eduapp.pojo;
 
-import android.databinding.BaseObservable;
+import androidx.databinding.BaseObservable;
 
 import com.bignerdranch.expandablerecyclerview.model.Parent;
 import com.google.gson.annotations.Expose;

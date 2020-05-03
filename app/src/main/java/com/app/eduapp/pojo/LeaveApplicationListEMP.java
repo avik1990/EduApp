@@ -1,11 +1,9 @@
 package com.app.eduapp.pojo;
 
-import android.databinding.BaseObservable;
+import androidx.databinding.BaseObservable;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
-import java.util.List;
 
 /**
  * Created by Avik on 04-05-2018.

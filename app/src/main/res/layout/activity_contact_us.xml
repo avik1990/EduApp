@@ -5,7 +5,7 @@
 
     <data></data>
 
-    <android.support.percent.PercentRelativeLayout
+    <androidx.percentlayout.widget.PercentRelativeLayout
         android:id="@+id/parent_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -85,7 +85,7 @@
             app:layout_marginRightPercent="3%"
             app:layout_marginTopPercent="1%" />
 
-        <android.support.percent.PercentRelativeLayout
+        <androidx.percentlayout.widget.PercentRelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/number_two"
@@ -147,6 +147,6 @@
                 app:layout_marginLeftPercent="3%"
                 app:layout_marginRightPercent="3%"
                 app:layout_marginTopPercent="1%" />
-        </android.support.percent.PercentRelativeLayout>
-    </android.support.percent.PercentRelativeLayout>
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+    </androidx.percentlayout.widget.PercentRelativeLayout>
 </layout>

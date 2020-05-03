@@ -1,13 +1,12 @@
 package com.app.eduapp.adapter.studentdiarypostlistadapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.app.eduapp.R;
-import com.app.eduapp.pojo.Notice;
 import com.app.eduapp.pojo.StudentPostList;
 import com.bignerdranch.expandablerecyclerview.ExpandableRecyclerAdapter;
 

@@ -2,7 +2,7 @@ package com.app.eduapp.adapter.noticeadapter;
 
 import android.annotation.SuppressLint;
 import android.os.Build;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;

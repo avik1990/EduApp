@@ -10,11 +10,11 @@
     </data>
 
 
-  <android.support.percent.PercentRelativeLayout
+  <androidx.percentlayout.widget.PercentRelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-  <android.support.percent.PercentRelativeLayout
+  <androidx.percentlayout.widget.PercentRelativeLayout
     android:id="@+id/parent_view"
     android:background="@color/single_row_bg_transparent"
     android:padding="@dimen/text_padding_size"
@@ -49,7 +49,7 @@
       app:layout_marginRightPercent="2%"
       app:layout_marginLeftPercent="2%"
       android:layout_height="wrap_content"/>
-  </android.support.percent.PercentRelativeLayout>
+  </androidx.percentlayout.widget.PercentRelativeLayout>
 
     <View
       android:id="@+id/divider"
@@ -147,6 +147,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"/>
     </LinearLayout>
-  </android.support.percent.PercentRelativeLayout>
+  </androidx.percentlayout.widget.PercentRelativeLayout>
 
 </layout>

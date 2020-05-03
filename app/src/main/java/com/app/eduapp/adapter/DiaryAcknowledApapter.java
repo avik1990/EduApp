@@ -1,21 +1,17 @@
 package com.app.eduapp.adapter;
 
 import android.content.Context;
-import android.content.Intent;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.app.eduapp.R;
 import com.app.eduapp.helper.ConnectionDetector;
 import com.app.eduapp.pojo.GetOrPostDiaryAcknowledgement;
-import com.app.eduapp.pojo.TDiaryClass;
-import com.app.eduapp.tattendance.AStudentListActivity;
-import com.app.eduapp.tattendance.TakeAttendanceListActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

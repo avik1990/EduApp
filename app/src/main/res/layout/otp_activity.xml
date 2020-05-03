@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <android.support.percent.PercentRelativeLayout
+    <androidx.percentlayout.widget.PercentRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
@@ -30,7 +30,7 @@
             android:textStyle="bold"
             app:layout_marginTopPercent="4%" />
 
-        <android.support.percent.PercentRelativeLayout
+        <androidx.percentlayout.widget.PercentRelativeLayout
             android:id="@+id/v_tv_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:gravity="center_horizontal"
             app:layout_marginTopPercent="4%">
 
-            <android.support.percent.PercentFrameLayout
+            <androidx.percentlayout.widget.PercentFrameLayout
                 android:background="@drawable/ic_password_background_login"
                 app:layout_heightPercent="15%"
                 app:layout_marginTopPercent="5%"
@@ -54,11 +54,11 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:maxLength="20"
                     app:layout_marginLeftPercent="22%" />
-            </android.support.percent.PercentFrameLayout>
+            </androidx.percentlayout.widget.PercentFrameLayout>
 
-        </android.support.percent.PercentRelativeLayout>
+        </androidx.percentlayout.widget.PercentRelativeLayout>
 
-        <android.support.percent.PercentFrameLayout
+        <androidx.percentlayout.widget.PercentFrameLayout
             android:id="@+id/v_sp_1"
             android:layout_below="@+id/v_tv_view"
             android:layout_centerHorizontal="true"
@@ -84,7 +84,7 @@
                 android:layout_gravity="right|center_vertical"
                 android:src="@drawable/ic_down_arrow" />
 
-        </android.support.percent.PercentFrameLayout>
+        </androidx.percentlayout.widget.PercentFrameLayout>
 
 
         <Button
@@ -132,7 +132,7 @@
             app:layout_widthPercent="50%" />
 
 
-    </android.support.percent.PercentRelativeLayout>
+    </androidx.percentlayout.widget.PercentRelativeLayout>
 </layout>
 
 

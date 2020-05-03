@@ -1,7 +1,64 @@
 <resources>
     <string name="app_name">LMET EduCare</string>
 
-   
+    <string name="schdule_on">Schdule On : </string>
+    <string name="held_on">Held On : </string>
+    <string name="passsmark_txt">Pass Mark : </string>
+    <string name="fullmarks_txt">Full Mark : </string>
+    <string name="school_name">Almighty Public School</string>
+    <string name="sync_now">Sync Now</string>
+    <string name="sync_every_time_txt">Sync everytime this app loads</string>
 
+    <string name="attendence_notification">Attendence Notification</string>
+
+    <string name="full_marks">Full Marks</string>
+    <string name="pass_marks">Pass Marks</string>
+    <string name="acq_marks">Acq. Marks</string>
+    <string name="grade">(%)Grade</string>
+
+    <string name="tedpickers">Attachments (max 3)</string>
+    <string name="base_url">http://lmet-rfidcloud.croyezdem.com/api/Guardians/</string>
+    <string name="GetOrPostDiaryCommnets">GetOrPostDiaryCommnets</string>
+    <string name="GetOrPostNoticeCommnets">GetOrPostNoticeCommnets</string>
+
+
+    <string name="base_url_jsongenerator">http://www.json-generator.com/api/json/get/cfBaepPVTS</string>
+
+    <string name="checkParentsLogin">checkParentsLoginNew/</string>
+    <string name="submitStudentsAttendanceEMP">submitStudentsAttendanceEMP</string>
+    <string name="submitDiaryPostEMP">submitDiaryPostEMP</string>
+    <string name="submitDiaryPostParent">submitDiaryPostParent</string>
+    <string name="postLeaveApplication">postLeaveApplication</string>
+
+
+    <string name="parentsOTPVerification">parentsOTPVerificationNew/</string>
+    <string name="GetOrPostDiaryAcknowledgement">GetOrPostDiaryAcknowledgement</string>
+    <string name="GetOrPostNoticeAcknowledgement">GetOrPostNoticeAcknowledgement</string>
+    <string name="getMonthsList">getMonthsList/</string>
+    <string name="getNoticeList">getNoticeList/</string>
+    <string name="getMyLeaveList">getNoticeList/</string>
+    <string name="getParentsProfile">getParentsProfile/</string>
+    <string name="getStudentsList">getStudentsList/</string>
+    <string name="getMonthlyAttendance">getMonthlyAttendance/</string>
+    <string name="school_address">7/70, Sunaro Wali Gali, Tulsi Chabutra, Bagichi, Nabada Nagar, Tajganj Agra - 282001, Uttar Pradesh, India</string>
+    <string name="internal_storage">internalstoreage</string>
+    <string name="heldon">Held on:</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="profile_desc">Rowan Sebastian Atkinson CBE is an English actor,  comedian and screenwriter</string>
+    <string name="profile_title">Mr Bean</string>
+    <string name="posts">posts</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="msg_error_unable_select_profile_pic">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
 
 </resources>

@@ -23,7 +23,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true" />
 
-        <android.support.percent.PercentRelativeLayout
+        <androidx.percentlayout.widget.PercentRelativeLayout
             android:id="@+id/parent_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -69,7 +69,7 @@
                     android:textColor="@color/black" />
             </RelativeLayout>
 
-            <android.support.percent.PercentFrameLayout
+            <androidx.percentlayout.widget.PercentFrameLayout
                 android:id="@+id/v_sp_1"
                 android:layout_below="@+id/v_teacher"
                 android:layout_marginTop="5dp"
@@ -93,7 +93,7 @@
                     android:layout_gravity="right|center_vertical"
                     android:src="@drawable/ic_down_arrow" />
 
-            </android.support.percent.PercentFrameLayout>
+            </androidx.percentlayout.widget.PercentFrameLayout>
 
 
             <TextView
@@ -119,6 +119,6 @@
                 android:layout_height="match_parent"
                 android:layout_below="@+id/className"
                 android:padding="1dp" />
-        </android.support.percent.PercentRelativeLayout>
+        </androidx.percentlayout.widget.PercentRelativeLayout>
     </RelativeLayout>
 </layout>

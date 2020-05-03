@@ -1,7 +1,7 @@
 package com.app.eduapp.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,7 +14,6 @@ import android.widget.TextView;
 
 import com.app.eduapp.R;
 import com.app.eduapp.helper.ConnectionDetector;
-import com.app.eduapp.helper.EdUtils;
 import com.app.eduapp.pojo.StudentsListByClassSectionEMP;
 import com.squareup.picasso.Picasso;
 

@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools">
 
 
-    <android.support.percent.PercentRelativeLayout
+    <androidx.percentlayout.widget.PercentRelativeLayout
         android:layout_width="match_parent"
         android:id="@+id/v_parent"
         android:layout_height="wrap_content">
 
-        <android.support.percent.PercentRelativeLayout
+        <androidx.percentlayout.widget.PercentRelativeLayout
             android:id="@+id/parent_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
                 android:textColor="@color/black"
                 app:layout_marginLeftPercent="2%"
                 app:layout_marginRightPercent="2%" />
-        </android.support.percent.PercentRelativeLayout>
+        </androidx.percentlayout.widget.PercentRelativeLayout>
 
         <View
             android:id="@+id/divider"
@@ -66,6 +66,6 @@
             app:layout_marginLeftPercent="2%" />
 
 
-    </android.support.percent.PercentRelativeLayout>
+    </androidx.percentlayout.widget.PercentRelativeLayout>
 
 </layout>

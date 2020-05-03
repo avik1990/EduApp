@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <android.support.percent.PercentRelativeLayout
+    <androidx.percentlayout.widget.PercentRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
@@ -30,7 +30,7 @@
             android:textStyle="bold"
             app:layout_marginTopPercent="4%" />
 
-        <android.support.percent.PercentRelativeLayout
+        <androidx.percentlayout.widget.PercentRelativeLayout
             android:id="@+id/v_tv_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:gravity="center_horizontal"
             app:layout_marginTopPercent="4%">
 
-            <android.support.percent.PercentFrameLayout
+            <androidx.percentlayout.widget.PercentFrameLayout
                 android:background="@drawable/ic_phone_background_login"
                 app:layout_heightPercent="15%"
                 app:layout_marginTopPercent="5%"
@@ -53,8 +53,8 @@
                     android:inputType="number"
                     android:maxLength="10"
                     app:layout_marginLeftPercent="22%" />
-            </android.support.percent.PercentFrameLayout>
-        </android.support.percent.PercentRelativeLayout>
+            </androidx.percentlayout.widget.PercentFrameLayout>
+        </androidx.percentlayout.widget.PercentRelativeLayout>
 
         <Button
             android:id="@+id/btn_submit"
@@ -72,7 +72,7 @@
             android:layout_alignParentRight="true"
             android:layout_margin="20dp"
             android:background="@drawable/ic_sub_logo" />
-    </android.support.percent.PercentRelativeLayout>
+    </androidx.percentlayout.widget.PercentRelativeLayout>
 </layout>
 
 
